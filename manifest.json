@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "DSA Instructor",
+  "version": "1.0",
+  "description": "Get DSA hints and debugging help while solving LeetCode problems.",
+  "permissions": ["activeTab", "scripting"],
+   "host_permissions": ["https://leetcode.com/*"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSA Instructor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>🧠 DSA Instructor</h2>
+      <p class="subtitle">Get hints for your coding problems</p>
+    </div>
+    
+    <div class="input-section">
+      <label class="input-label" for="userInput">Ask your problem</label>
+      <textarea 
+        id="userInput" 
+        
+        spellcheck="false"
+      ></textarea>
+    </div>
+    
+    <div class="button-section">
+      <button id="askBtn" class="primary-btn">
+        <span class="btn-icon">💡</span>
+        <span class="btn-text">Get Hint</span>
+        <div class="btn-loader"></div>
+      </button>
+    </div>
+    
+    <div class="response-section">
+      <div id="loadingIndicator" class="loading-indicator">
+        <div class="spinner"></div>
+        <span>Analyzing your code...</span>
+      </div>
+      <div id="responseContainer" class="response-container">
+        <div class="response-header">
+          <span class="response-icon">🎯</span>
+          <span class="response-title">Hint</span>
+        </div>
+        <pre id="response"></pre>
+      </div>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
